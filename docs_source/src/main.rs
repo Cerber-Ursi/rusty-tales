@@ -6,10 +6,11 @@ use std::{
 };
 
 fn main() {
-    let input: PathBuf = [env!("CARGO_MANIFEST_DIR"), "markdown", "index.md"]
+    for lang in &["ru", "en"] {
+    let input: PathBuf = [env!("CARGO_MANIFEST_DIR"), "markdown", lang, "index.md"]
         .into_iter()
         .collect();
-    let output: PathBuf = [env!("CARGO_MANIFEST_DIR"), "..", "docs", "index.html"]
+    let output: PathBuf = [env!("CARGO_MANIFEST_DIR"), "..", "docs", lang, "index.html"]
         .into_iter()
         .collect();
 
@@ -18,4 +19,5 @@ fn main() {
         Parser::new(&read_to_string(input).expect("Could not read input file")),
     )
     .expect("Could not write HTML");
+    }
 }
