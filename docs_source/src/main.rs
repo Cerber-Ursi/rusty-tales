@@ -2,7 +2,6 @@ use std::error::Error;
 
 mod chapter;
 mod consts;
-mod highlight;
 mod index;
 mod processing;
 

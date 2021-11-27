@@ -7,5 +7,3 @@ edition = "2018"
 [dependencies]
 pulldown-cmark = "0.6.0"
 itertools = "0.8.0"
-syn = { version = "1.0", features = ["full"] }
-proc-macro2 = { version = "1.0", features = ["span-locations"] }
