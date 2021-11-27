@@ -5,4 +5,4 @@ authors = ["Cerberuser <k.bagrov@g.nsu.ru>"]
 edition = "2018"
 
 [dependencies]
-trybuild = "1.0"
+batch_run = { git = "https://github.com/cerberuser/batch_run" }
