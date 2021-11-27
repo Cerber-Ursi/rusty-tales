@@ -1,9 +1,11 @@
+use stderrlog;
+
 mod conflux;
 mod earth;
 
 fn main() {
-    let cur_crate = conflux::Crate::default();
-    let mut items = conflux::fetch(cur_crate);
+    stderrlog::new().verbosity(4).init().expect("Failed to initialize logger");
+    let mut items = conflux::CRATES.clone();
     earth::deliver_to(&mut items);
     conflux::show(items);
 }
