@@ -5,7 +5,7 @@ authors = ["Cerberuser <k.bagrov@g.nsu.ru>"]
 edition = "2018"
 
 [dependencies]
-batch_run = "1.0.0-alpha.3"
+batch_run = "1.0.0"
 lazy_static = "1.4.0"
 log = "0.4.8"
 stderrlog = "0.4.1"
