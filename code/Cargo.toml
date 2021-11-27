@@ -9,3 +9,8 @@ batch_run = "1.0.0-alpha.3"
 lazy_static = "1.4.0"
 log = "0.4.8"
 stderrlog = "0.4.1"
+
+[features]
+prologue = ["prologue-1", "prologue-2"]
+prologue-1 = []
+prologue-2 = []
