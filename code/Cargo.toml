@@ -1,7 +1,8 @@
 [package]
 name = "code"
 version = "0.1.0"
-authors = ["u0_a113"]
+authors = ["Cerberuser <k.bagrov@g.nsu.ru>"]
+edition = "2018"
 
 [dependencies]
-
+trybuild = "1.0"
